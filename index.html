@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Weather Website</title>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
       margin: 0;
@@ -50,8 +54,9 @@
       margin: 0 0 10px;
     }
 
-    .weather-icon {
+    .weather-icon i {
       font-size: 50px;
+      color: #f4b400; /* sun yellow */
     }
 
     .forecast {
@@ -68,8 +73,9 @@
       text-align: center;
     }
 
-    .day .icon {
+    .day .icon i {
       font-size: 30px;
+      color: #0077b6; /* icon color for forecast */
       margin-bottom: 5px;
     }
 
@@ -92,24 +98,26 @@
       <p style="font-size: 2em;">72°F</p>
       <p>Sunny</p>
     </div>
-    <div class="weather-icon">☀</div>
+    <div class="weather-icon">
+      <i class="fas fa-sun"></i>
+    </div>
   </div>
 
   <div class="forecast">
     <div class="day">
       <div><strong>Mon</strong></div>
-      <div class="icon">⛅</div>
+      <div class="icon"><i class="fas fa-cloud-sun"></i></div>
       <div>68°F</div>
     </div>
     <div class="day">
       <div><strong>Tue</strong></div>
-      <div class="icon">🌧</div>
+      <div class="icon"><i class="fas fa-cloud-showers-heavy"></i></div>
       <div>65°F</div>
     </div>
     <div class="day">
       <div><strong>Wed</strong></div>
-      <div class="icon">☀</div>
-      <div>74°F</div>
+      <div class="icon"><i class="fas fa-cloud"></i></div>
+      <div>70°F</div>
     </div>
   </div>
 </div>
